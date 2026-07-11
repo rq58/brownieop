@@ -1,394 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Brownie OP | Brownies Saludables</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brownie OP</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#f8f6f3;
-color:#222;
-}
-
-header{
-position:fixed;
-width:100%;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(255,255,255,.95);
-backdrop-filter:blur(10px);
-box-shadow:0 5px 20px rgba(0,0,0,.08);
-z-index:999;
-}
-
-.logo{
-font-size:30px;
-font-weight:700;
-color:#5b3715;
-}
-
-nav a{
-margin-left:30px;
-text-decoration:none;
-color:#444;
-font-weight:500;
-transition:.3s;
-}
-
-nav a:hover{
-color:#6f8c4b;
-}
-
-.hero{
-
-height:100vh;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:0 8%;
-gap:50px;
-
-}
-
-.hero-text h1{
-
-font-size:65px;
-color:#4d2d14;
-margin-bottom:15px;
-
-}
-
-.hero-text span{
-color:#6f8c4b;
-}
-
-.hero-text p{
-font-size:19px;
-line-height:1.7;
-margin-bottom:30px;
-color:#555;
-}
-
-button{
-
-padding:18px 40px;
-border:none;
-background:#6f8c4b;
-color:white;
-font-size:18px;
-border-radius:50px;
-cursor:pointer;
-transition:.3s;
-
-}
-
-button:hover{
-
-transform:scale(1.05);
-background:#5d7640;
-
-}
-
-.hero img{
-
-width:500px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.2);
-
-}
-
-section{
-
-padding:100px 8%;
-
-}
-
-h2{
-
-font-size:42px;
-text-align:center;
-margin-bottom:50px;
-color:#4d2d14;
-
-}
-
-.cards{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-padding:25px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-}
-
-.card img{
-
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:15px;
-margin-bottom:20px;
-
-}
-
-.card h3{
-
-margin-bottom:10px;
-color:#4d2d14;
-
-}
-
-.about{
-
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-
-}
-
-.about img{
-
-width:100%;
-border-radius:20px;
-
-}
-
-.about p{
-
-font-size:18px;
-line-height:1.8;
-
-}
-
-footer{
-
-background:#4d2d14;
-padding:40px;
-color:white;
-text-align:center;
-
-}
-
-footer a{
-
-color:#9dd06b;
-text-decoration:none;
-
-}
-
-@media(max-width:900px){
-
-.hero{
-
-flex-direction:column-reverse;
-text-align:center;
-padding-top:120px;
-
-}
-
-.hero img{
-
-width:100%;
-
-}
-
-.hero-text h1{
-
-font-size:45px;
-
-}
-
-.about{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-</style>
-
-</head>
-<body>
-
-<header>
-
-<div class="logo">🍫 Brownie OP</div>
-
-<nav>
-
-<a href="#inicio">Inicio</a>
-<a href="#nosotros">Nosotros</a>
-<a href="#productos">Productos</a>
-<a href="#contacto">Contacto</a>
-
-</nav>
-
-</header>
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+body{background:#f8f6f3;color:#333}
+header{position:sticky;top:0;background:#fff;padding:18px 8%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+nav a{text-decoration:none;color:#333;margin-left:25px}
+.logo{font-size:30px;font-weight:700;color:#5b3715}
+.hero{display:flex;align-items:center;justify-content:space-between;padding:80px 8%;gap:40px;flex-wrap:wrap}
+.hero img,.about img{max-width:480px;width:100%;border-radius:20px}
+button{background:#6f8c4b;color:#fff;border:none;padding:15px 30px;border-radius:30px}
+section{padding:70px 8%}
+h1{font-size:60px;color:#5b3715} h2{text-align:center;margin-bottom:30px;color:#5b3715}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px}
+.card{background:#fff;padding:20px;border-radius:18px;box-shadow:0 8px 20px rgba(0,0,0,.08);text-align:center}
+.card img{width:100%;height:200px;object-fit:cover;border-radius:12px;margin-bottom:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+footer{background:#5b3715;color:#fff;padding:50px 8%;text-align:center}
+footer p{margin:10px 0}
+@media(max-width:800px){.about{grid-template-columns:1fr}h1{font-size:42px}}
+</style></head><body>
+<header><div class="logo">🍫 Brownie OP</div><nav><a href="#inicio">Inicio</a><a href="#nosotros">Nosotros</a><a href="#productos">Productos</a><a href="#contacto">Contacto</a></nav></header>
 <section class="hero" id="inicio">
-
-<div class="hero-text">
-
-<h1>Brownie <span>OP</span></h1>
-
-<p>
-
-Los brownies saludables que demuestran que comer rico y cuidarte sí puede ir de la mano.
-Elaborados con ingredientes seleccionados para ofrecer sabor, energía y bienestar.
-
-</p>
-
-<button>¡Quiero probar uno!</button>
-
-</div>
-
-<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476d?w=900" alt="Brownie">
-
-</section>
-
+<div><h1>Brownie OP</h1><p>Brownies saludables de plátano sin azúcar. Disfruta un postre delicioso con ingredientes seleccionados.</p><br><button>¡Quiero probar uno!</button></div>
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476d?w=900"></section>
 <section class="about" id="nosotros">
-
 <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=900">
-
-<div>
-
-<h2>¿Quiénes somos?</h2>
-
-<p>
-
-Somos un emprendimiento escolar que busca ofrecer brownies deliciosos elaborados con ingredientes más saludables, demostrando que el sabor y una alimentación equilibrada pueden ir juntos.
-
-Nuestra misión es transformar un antojo en una experiencia nutritiva.
-
-</p>
-
-</div>
-
-</section>
-
-<section id="productos">
-
-<h2>Nuestros Brownies</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=700">
-
-<h3>Ingredientes Naturales</h3>
-
-<p>Utilizamos ingredientes cuidadosamente seleccionados para ofrecer un brownie más saludable.</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=700">
-
-<h3>Menos Azúcar</h3>
-
-<p>Una alternativa deliciosa con menos azúcar que un brownie tradicional.</p>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=700">
-
-<h3>Mucho Sabor</h3>
-
-<p>Porque saludable también significa disfrutar cada bocado.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="contacto">
-
-<h2>Contáctanos</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<h3>📧 Correo</h3>
-
-<p>santiagotorresbartra@gmail.com</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌱 Nuestra promesa</h3>
-
-<p>Crear brownies deliciosos con un enfoque más saludable para todos.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🍫 Brownie OP</h3>
-
-<p>"El brownie que está OP de sabor."</p>
-
-</div>
-
-</div>
-
-</section>
-
+<div><h2>¿Quiénes somos?</h2><p>Somos un grupo de estudiantes que desarrolla un proyecto de emprendimiento con el objetivo de crear brownies saludables de plátano sin azúcar. Buscamos demostrar que es posible disfrutar un postre delicioso mientras promovemos una alimentación más saludable.</p></div></section>
+<section id="productos"><h2>Nuestros Brownies</h2><div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=700"><h3>Ingredientes Naturales</h3><p>Seleccionados cuidadosamente.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?w=700"><h3>Menos Azúcar</h3><p>Una alternativa saludable.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=700"><h3>Mucho Sabor</h3><p>Porque saludable también puede ser delicioso.</p></div>
+</div></section>
+<section id="contacto"><h2>Contáctanos</h2><div class="cards">
+<div class="card"><h3>📧 Correo</h3><p>brownie.op.tfbs@gmail.com</p></div>
+<div class="card"><h3>🌱 Nuestra promesa</h3><p>Crear brownies deliciosos con un enfoque saludable.</p></div>
+<div class="card"><h3>🍌 Brownie OP</h3><p>El brownie que está OP de sabor.</p></div>
+</div></section>
 <footer>
-
-<h2>Brownie OP 🍫</h2>
-
-<p>
-
-Hecho con ❤️ para demostrar que un brownie saludable también puede ser increíble.
-
-</p>
-
-<br>
-
-<p>
-
-Contacto:
-<a href="mailto:santiagotorresbartra@gmail.com">santiagotorresbartra@gmail.com</a>
-
-</p>
-
-</footer>
-
-</body>
-</html>
+<h2>Brownie OP</h2>
+<p>Hecho con ❤️ por estudiantes comprometidos con una alimentación saludable.</p>
+<h3>Equipo del proyecto</h3>
+<p><b>Santiago Torres</b> — brownie.op.tfbs@gmail.com</p>
+<p><b>Thiago Doig</b> — doig.thiago06@gmail.com</p>
+<p><b>Francisco Cerna</b> — francisco8623crack@gmail.com</p>
+<p><b>Benyamin Saravia</b> — anonymus.benya@gmail.com</p>
+<p>© 2026 Brownie OP - Proyecto de Emprendimiento Escolar</p>
+</footer></body></html>
